@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Transport_cpp">
+      <UniqueIdentifier>{9f7a2299-e940-414f-a43c-37f44fa5d78b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Transport_cpp\AirTransport">
+      <UniqueIdentifier>{f539075c-f6d4-4562-9c80-8001c4e99c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Transport_cpp\GroundTransportation">
+      <UniqueIdentifier>{5777d3ab-22cc-474f-97df-9cef23bcbde1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Races_cpp">
+      <UniqueIdentifier>{28d74790-927b-4d49-9192-2422d681d7b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Transport_h">
+      <UniqueIdentifier>{347a7997-489b-40bf-9081-9d36c288c4dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Transport_h\AirTransport">
+      <UniqueIdentifier>{3feb5d08-7b4c-47b4-aa76-e6998a7b49db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Transport_h\GroundTransportation">
+      <UniqueIdentifier>{129801d8-d337-4aff-a7f2-e3e8411d9a74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Races_h">
+      <UniqueIdentifier>{5af0e8de-94e1-47ee-b587-2df45ee9b26f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AirTransport.h">
+      <Filter>Файлы заголовков\Transport_h\AirTransport</Filter>
+    </ClInclude>
+    <ClInclude Include="Broomstick.h">
+      <Filter>Файлы заголовков\Transport_h\AirTransport</Filter>
+    </ClInclude>
+    <ClInclude Include="Eagle.h">
+      <Filter>Файлы заголовков\Transport_h\AirTransport</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyingCarpet.h">
+      <Filter>Файлы заголовков\Transport_h\AirTransport</Filter>
+    </ClInclude>
+    <ClInclude Include="AllTerrainBoots.h">
+      <Filter>Файлы заголовков\Transport_h\GroundTransportation</Filter>
+    </ClInclude>
+    <ClInclude Include="Camel.h">
+      <Filter>Файлы заголовков\Transport_h\GroundTransportation</Filter>
+    </ClInclude>
+    <ClInclude Include="Centaur.h">
+      <Filter>Файлы заголовков\Transport_h\GroundTransportation</Filter>
+    </ClInclude>
+    <ClInclude Include="FastCamel.h">
+      <Filter>Файлы заголовков\Transport_h\GroundTransportation</Filter>
+    </ClInclude>
+    <ClInclude Include="GroundTransportation.h">
+      <Filter>Файлы заголовков\Transport_h\GroundTransportation</Filter>
+    </ClInclude>
+    <ClInclude Include="Transport.h">
+      <Filter>Файлы заголовков\Transport_h\GroundTransportation</Filter>
+    </ClInclude>
+    <ClInclude Include="Race.h">
+      <Filter>Файлы заголовков\Races_h</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportVehicle.h">
+      <Filter>Файлы заголовков\Transport_h</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AirTransport.cpp">
+      <Filter>Исходные файлы\Transport_cpp\AirTransport</Filter>
+    </ClCompile>
+    <ClCompile Include="Broomstick.cpp">
+      <Filter>Исходные файлы\Transport_cpp\AirTransport</Filter>
+    </ClCompile>
+    <ClCompile Include="Eagle.cpp">
+      <Filter>Исходные файлы\Transport_cpp\AirTransport</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyingCarpet.cpp">
+      <Filter>Исходные файлы\Transport_cpp\AirTransport</Filter>
+    </ClCompile>
+    <ClCompile Include="AllTerrainBoots.cpp">
+      <Filter>Исходные файлы\Transport_cpp\GroundTransportation</Filter>
+    </ClCompile>
+    <ClCompile Include="Camel.cpp">
+      <Filter>Исходные файлы\Transport_cpp\GroundTransportation</Filter>
+    </ClCompile>
+    <ClCompile Include="Centaur.cpp">
+      <Filter>Исходные файлы\Transport_cpp\GroundTransportation</Filter>
+    </ClCompile>
+    <ClCompile Include="FastCamel.cpp">
+      <Filter>Исходные файлы\Transport_cpp\GroundTransportation</Filter>
+    </ClCompile>
+    <ClCompile Include="GroundTransportation.cpp">
+      <Filter>Исходные файлы\Transport_cpp\GroundTransportation</Filter>
+    </ClCompile>
+    <ClCompile Include="Race.cpp">
+      <Filter>Исходные файлы\Races_cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
