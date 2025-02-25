@@ -1,6 +1,12 @@
 #pragma once
 #include <string>
 
+#ifdef IMPLEMENTINGCLASSES_EXPORTS  //Макрос экспорта
+#define IMPLEMENTINGCLASSES_API __declspec(dllexport)
+#else 
+#define IMPLEMENTINGCLASSES_API __declspec(dllimport)
+#endif
+
 //Класс транспортных средств 
 class TransportVehicle {
 public:

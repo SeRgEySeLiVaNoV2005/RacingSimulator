@@ -22,9 +22,6 @@
     <Filter Include="Исходные файлы\Transport_cpp\GroundTransportation">
       <UniqueIdentifier>{5777d3ab-22cc-474f-97df-9cef23bcbde1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Races_cpp">
-      <UniqueIdentifier>{28d74790-927b-4d49-9192-2422d681d7b2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Файлы заголовков\Transport_h">
       <UniqueIdentifier>{347a7997-489b-40bf-9081-9d36c288c4dd}</UniqueIdentifier>
     </Filter>
@@ -33,9 +30,6 @@
     </Filter>
     <Filter Include="Файлы заголовков\Transport_h\GroundTransportation">
       <UniqueIdentifier>{129801d8-d337-4aff-a7f2-e3e8411d9a74}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\Races_h">
-      <UniqueIdentifier>{5af0e8de-94e1-47ee-b587-2df45ee9b26f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -66,14 +60,11 @@
     <ClInclude Include="GroundTransportation.h">
       <Filter>Файлы заголовков\Transport_h\GroundTransportation</Filter>
     </ClInclude>
-    <ClInclude Include="Transport.h">
-      <Filter>Файлы заголовков\Transport_h\GroundTransportation</Filter>
-    </ClInclude>
-    <ClInclude Include="Race.h">
-      <Filter>Файлы заголовков\Races_h</Filter>
-    </ClInclude>
     <ClInclude Include="TransportVehicle.h">
       <Filter>Файлы заголовков\Transport_h</Filter>
+    </ClInclude>
+    <ClInclude Include="Transport.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -103,9 +94,6 @@
     </ClCompile>
     <ClCompile Include="GroundTransportation.cpp">
       <Filter>Исходные файлы\Transport_cpp\GroundTransportation</Filter>
-    </ClCompile>
-    <ClCompile Include="Race.cpp">
-      <Filter>Исходные файлы\Races_cpp</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

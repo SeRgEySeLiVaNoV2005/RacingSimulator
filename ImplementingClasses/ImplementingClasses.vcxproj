@@ -104,7 +104,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;IMPLEMENTINGCLASSES_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>IMPLEMENTINGCLASSES_EXPORTS;DEBUG;WINDOWS;USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -140,7 +140,6 @@
     <ClInclude Include="FastCamel.h" />
     <ClInclude Include="FlyingCarpet.h" />
     <ClInclude Include="GroundTransportation.h" />
-    <ClInclude Include="Race.h" />
     <ClInclude Include="Transport.h" />
     <ClInclude Include="TransportVehicle.h" />
   </ItemGroup>
@@ -154,7 +153,6 @@
     <ClCompile Include="FastCamel.cpp" />
     <ClCompile Include="FlyingCarpet.cpp" />
     <ClCompile Include="GroundTransportation.cpp" />
-    <ClCompile Include="Race.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
