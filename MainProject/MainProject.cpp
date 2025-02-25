@@ -2,6 +2,5 @@
 
 int main() {
     Generator obj;
-
     return 0;
 }
