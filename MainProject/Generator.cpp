@@ -78,23 +78,7 @@ int getPreparationOfRace() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-map<string, unique_ptr<TransportVehicle>> getTransportVehicle(int tr, int lp) {
+map<string, unique_ptr<TransportVehicle>> Generator::getTransportVehicle(int tr, int lp) {
     cout << "\33[2J\33[H";
     textWarning();
 
@@ -196,7 +180,7 @@ int Generator::getResultRace(map<string, unique_ptr<TransportVehicle>> result) {
         ++it;
     }
 
-    sort(sort_result.begin(), sort_result.end(), Generator::sortWiner);
+    sort(sort_result.begin(), sort_result.end(), &Generator::sortWiner);
 
     cout << "Результат гонки:" << endl;
     for (int i = 0; i < sort_result.size(); i++) {
@@ -216,6 +200,6 @@ int Generator::getResultRace(map<string, unique_ptr<TransportVehicle>> result) {
     return stoi(answer_user);
 }
 
-static bool sortWiner(map<string, double> a, map<string, double> b) {
+bool sortWiner(map<string, double> a, map<string, double> b) {
     return a.begin()->second < b.begin()->second;
 }

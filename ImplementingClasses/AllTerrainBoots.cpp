@@ -1,6 +1,6 @@
 #include "AllTerrainBoots.h"
 
-AllTerrainBoots::AllTerrainBoots(int lengthPath, double speedObject, double timeRest, double timeBeforeRest) : GroundTransportation() {
+AllTerrainBoots::AllTerrainBoots(int lengthPath, double speedObject, double timeRest, double timeBeforeRest) :  GroundTransportation() {
 	nameTranspost = "Ботинки-вездеходы";
 	time = getTimeResult(lengthPath, speedObject, timeRest, timeBeforeRest);
 }
