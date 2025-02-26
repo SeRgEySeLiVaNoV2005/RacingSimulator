@@ -1,13 +1,14 @@
 #pragma once
 #include <iostream>
+#include <locale.h>
 #include <map>
 #include <vector>
 #include <algorithm>
 #include <memory>
+#include <Windows.h>
 using namespace std;
 
 #include "..\ImplementingClasses\Transport.h"
-
 
 class Generator : TransportVehicle{
 public:

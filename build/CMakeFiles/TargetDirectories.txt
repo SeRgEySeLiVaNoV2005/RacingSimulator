@@ -1,0 +1,5 @@
+C:/Users/dog24/Desktop/Курсовой проект/RacingSimulator/build/CMakeFiles/ImplementingClasses.dir
+C:/Users/dog24/Desktop/Курсовой проект/RacingSimulator/build/CMakeFiles/MainProject.dir
+C:/Users/dog24/Desktop/Курсовой проект/RacingSimulator/build/CMakeFiles/run.dir
+C:/Users/dog24/Desktop/Курсовой проект/RacingSimulator/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/dog24/Desktop/Курсовой проект/RacingSimulator/build/CMakeFiles/ZERO_CHECK.dir

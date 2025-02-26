@@ -10,7 +10,7 @@ Generator::Generator(){
 }
 
 int Generator::getTypeRace() {
-    cout << "\33[2J\33[H";
+    system("cls");
     string typeRace;
 
     while (!(typeRace == "3" || typeRace == "2" || typeRace == "1")) {
@@ -26,7 +26,7 @@ int Generator::getTypeRace() {
     return stoi(typeRace);
 }
 int Generator::getLengthPath() {
-    cout << "\33[2J\33[H";
+    system("cls");
     string lp; // length_path
 
     while (lp.empty()) {
@@ -40,7 +40,7 @@ int Generator::getLengthPath() {
             }
         }
 
-        cout << "\33[2J\33[H";
+        system("cls");
     }
 
     return stoi(lp);
@@ -48,7 +48,7 @@ int Generator::getLengthPath() {
 
 
 
-void textWarning() {
+void Generator::textWarning() {
     string number;
 
     for (; number != "1";) {
@@ -56,12 +56,12 @@ void textWarning() {
             << "1. Зарегистрировать транспорт" << endl
             << "Выберите действие: ";
         cin >> number;
-        cout << "\33[2J\33[H";
+        system("cls");
     }
 }
 
-int getPreparationOfRace() {
-    cout << "\33[2J\33[H";
+int Generator::getPreparationOfRace() {
+    system("cls");
     string answer_user;
 
     for (; answer_user != "1" && answer_user != "2";) {
@@ -71,7 +71,7 @@ int getPreparationOfRace() {
             << "2. Начать гонку" << endl
             << "Выберите действие: ";
         cin >> answer_user;
-        cout << "\33[2J\33[H";
+        system("cls");
     }
 
     return stoi(answer_user);
@@ -79,7 +79,7 @@ int getPreparationOfRace() {
 
 
 map<string, unique_ptr<TransportVehicle>> Generator::getTransportVehicle(int tr, int lp) {
-    cout << "\33[2J\33[H";
+    system("cls");
     textWarning();
 
     map<string, unique_ptr<TransportVehicle>> transports;
@@ -121,7 +121,7 @@ map<string, unique_ptr<TransportVehicle>> Generator::getTransportVehicle(int tr,
             << "0. закончить регестрацию" << endl
             << "Выберите транспорт или 0 для окончания процесса регистрации: ";
         cin >> transport;
-        cout << "\33[2J\33[H";
+        system("cls");
 
         if (find(numbers.begin(), numbers.end(), transport) == numbers.end()) {
             cout << "Пожалуйста, выбирете число от 0 до 7\n\n";
@@ -168,7 +168,7 @@ map<string, unique_ptr<TransportVehicle>> Generator::getTransportVehicle(int tr,
 
 
 int Generator::getResultRace(map<string, unique_ptr<TransportVehicle>> result) {
-    cout << "\33[2J\33[H";
+    system("cls");
 
     string answer_user;
     vector<map<string, double>> sort_result;
@@ -194,12 +194,12 @@ int Generator::getResultRace(map<string, unique_ptr<TransportVehicle>> result) {
             << "2. Выйти" << endl
             << "Выберите действие: ";
         cin >> answer_user;
-        cout << "\33[2J\33[H";
+        system("cls");
     }
 
     return stoi(answer_user);
 }
 
-bool sortWiner(map<string, double> a, map<string, double> b) {
+bool Generator::sortWiner(map<string, double> a, map<string, double> b) {
     return a.begin()->second < b.begin()->second;
 }

@@ -9,6 +9,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImplementingClasses", "Impl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{1F8AFA25-11C0-42BC-825E-0EDDFEE31B1F}"
 	ProjectSection(SolutionItems) = preProject
+		CMakeLists.txt = CMakeLists.txt
 		info.md = info.md
 	EndProjectSection
 EndProject
