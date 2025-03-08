@@ -7,15 +7,15 @@ AllTerrainBoots::AllTerrainBoots(int lengthPath, double speedObject, double time
 
 double AllTerrainBoots::getTimeResult(int lengthPath, double speedObject, double timeRest, double timeBeforeRest) {
     double timeWithoutStops = lengthPath / speedObject;
-    double timeWithStops = lengthPath / (speedObject * timeBeforeRest);
-
-    if (timeWithStops > 0) {
+    int StopCount = lengthPath / (speedObject * timeBeforeRest);
+    return timeWithoutStops + timeRest + (StopCount - 1) * 5;
+    /*if (StopCount > 0) {
         timeWithoutStops += timeRest;
-        lengthPath / (speedObject * timeBeforeRest) != timeWithStops ? timeWithStops-- : timeWithStops -= 2;
+        lengthPath / (speedObject * timeBeforeRest) != StopCount ? StopCount-- : StopCount -= 2;
     }
-    if (timeWithStops > 1) {
-        timeWithStops *= 5;
+    if (StopCount > 1) {
+        StopCount *= 5;
     }
 
-    return timeWithoutStops + timeWithStops;
+    return timeWithoutStops + StopCount;*/
 }

@@ -6,20 +6,20 @@ FastCamel::FastCamel(int lengthPath, double speedObject, double timeRest, double
 }
 
 double FastCamel::getTimeResult(int lengthPath, double speedObject, double timeRest, double timeBeforeRest) {
-    double timeWithoutStops = lengthPath / speedObject; // Время прибытия без остановок
-    double timeWithStops = lengthPath / (speedObject * timeBeforeRest); // Время всего простоя на остановках
-
-    if (timeWithStops > 0) {
+    double timeWithoutStops = lengthPath / speedObject;
+    int StopCount = lengthPath / (speedObject * timeBeforeRest);
+    return timeWithoutStops + timeRest + 6.5 + (StopCount - 2) * 8;
+    /*if (StopCount > 0) {
         timeWithoutStops += timeRest;
-        lengthPath / (speedObject * timeBeforeRest) != timeWithStops ? timeWithStops-- : timeWithStops -= 2;
+        lengthPath / (speedObject * timeBeforeRest) != StopCount ? StopCount-- : StopCount -= 2;
     }
-    if (timeWithStops > 1) {
-        timeWithStops += 8;
+    if (StopCount > 1) {
+        StopCount += 8;
     }
-    if (timeWithStops > 2) {
-        if (lengthPath / (speedObject * timeBeforeRest) == timeWithStops) timeWithStops--;
-        timeWithStops *= 8;
+    if (StopCount > 2) {
+        if (lengthPath / (speedObject * timeBeforeRest) == StopCount) StopCount--;
+        StopCount *= 8;
     }
 
-    return timeWithoutStops + timeWithStops;
+    return timeWithoutStops + StopCount;*/
 }

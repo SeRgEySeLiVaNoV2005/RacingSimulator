@@ -6,5 +6,5 @@ Centaur::Centaur(int lengthPath, double speedObject, double timeRest, double tim
 }
 
 double Centaur::getTimeResult(int lengthPath, double speedObject, double timeRest, double timeBeforeRest) {
-	return lengthPath / speedObject + int(lengthPath / (speedObject * timeBeforeRest)) * timeRest;
+	return int(lengthPath / speedObject) + int(lengthPath / (speedObject * timeBeforeRest)) * timeRest;
 }
